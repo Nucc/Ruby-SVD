@@ -78,7 +78,7 @@ void svdcmp(float **a, int m, int n, float w[], float **v)
 					for (k=l;k<=n;k++) v[k][j] += s*v[k][i];
 				}
 			}
-			for (j=l;j<=n;j++) v[i][j]=v[j][i]=0.0;
+			for (j=l;j<=m;j++) v[i][j]=v[j][i]=0.0;
 		}
 		if (i<IMIN(m,n))
 			v[i][i]=1.0;
